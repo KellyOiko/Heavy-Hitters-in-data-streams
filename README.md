@@ -50,3 +50,18 @@ The work is structured in four parts, each exploring a different aspect of the p
 - Both methods scale efficiently to massive streams and form the foundation of modern streaming analytics.
 
 ---
+
+## Data Files
+
+The repository also includes two data files used in the experiments:
+
+- **`hash_functions.txt`**  
+  - Contains **1500 lines**, corresponding to *100 Count–Min Sketches × 15 hash functions each*.  
+  - Each line stores the coefficients of one hash function (`a₁ … a₁₃`).  
+
+- **`sketch.txt`**  
+  - Contains **1500 lines**, corresponding to *100 Count–Min Sketches × 15 rows each*.  
+  - Each line stores **277 counters**, representing the buckets of one row in the sketch.  
+
+These files provide the pre-generated hash functions and the resulting sketch tables for reproducibility and analysis.
+
